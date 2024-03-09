@@ -1,0 +1,503 @@
+body {
+    background-color: #BEE3DB;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto minmax(0, 4fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas: "logo user title language cart";
+    align-items: center;
+    gap: 10px;
+    background-color: #8CDED9;
+    border-radius: 20px;
+}
+
+.header h1 {
+    font-family: 'titulos', sans-serif;
+    font-size: 50px;
+}
+
+.header h2 {
+    font-family: 'textos', sans-serif;
+    font-size: 20px;
+}
+
+.header__logo img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.header__user img,
+.header__language img,
+.header__cart img {
+    width: 100%;
+    height: auto;
+    max-width: 45px;
+    cursor: pointer;
+}
+
+.header__subtitle {
+    text-indent: 80px;
+}
+
+.header__content {
+    margin-left: 3%;
+}
+
+.menu-wrapper {
+    background-color: #8CDED9;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: solid black 3px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+}
+
+.menu li a:hover {
+    background-color: #D3BC90;
+    color: #000;
+    border-radius: 20px;
+}
+
+nav {
+    position: relative;
+    z-index: 2;
+}
+
+.list {
+    font-family: 'titulos', sans-serif;
+    font-size: 20px;
+}
+
+
+.line {
+    background-color: #D3BC90;
+    margin: 4% auto;
+    width: 90%;
+    max-width: 90%;
+    height: 30px;
+    max-height: 30px;
+    border-radius: 20px;
+}
+
+.menus {
+    text-align: center;
+    background-color: #D3BC90;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 80%;
+    height: 350px;
+    max-height: 350px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menus h1 {
+    margin-bottom: 20px;
+    font-family: 'titulos';
+    font-size: 30px;
+}
+
+.menus h2,
+h3 {
+    font-family: 'textos', sans-serif;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding-top: 2%;
+}
+
+.menu {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.menu img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.menu:last-child {
+    margin-right: 0;
+}
+
+.menu h2,
+.menu h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.menu .menu-image {
+    width: 100%;
+    max-width: 100%;
+    max-width: 220px;
+}
+
+.menu img[src*="trucha"] {
+    width: 100%;
+    max-width: 220px;
+}
+
+
+footer {
+    position: relative;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 100%;
+    height: 205px;
+    max-height: 205px;
+    background-color: #8CDED9;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 6%;
+    z-index: 2;
+}
+
+.footer-container h1 {
+    margin-bottom: 1%;
+    padding-top: 3%;
+    font-family: 'titulos', sans-serif;
+}
+
+.footer-container div {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-container img {
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    max-height: 60px;
+}
+
+.image-overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.image-overlay img {
+    width: 100px;
+    height: 100px;
+    margin: 0 100px;
+}
+
+
+@font-face {
+    font-family: "titulos";
+    src: url('../fuentes/Sons\ of\ Pain\ M.C..ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "textos";
+    src: url('../fuentes/Type\ Machine.ttf') format('truetype');
+}
+
+.card_categories_selector {
+    background-color: #D3BC90;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    width: 25%;
+    border-radius: 20px;
+    border: solid 3px #000;
+}
+
+.card_categories_selector:hover {
+    background-color: #8CDED9;
+}
+
+.card_category_selector_text {
+    color: #000;
+    font-family: "titulos";
+    text-align: center;
+}
+
+.card_categories_selector a {
+    text-decoration: none;
+    font-family: "titulos";
+    font-size: 30px;
+    color: #000;
+}
+
+#dishes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.card_random_dish {
+    background-color: #D3BC90;
+    width: 17%;
+    border: 3px solid #000;
+    border-radius: 20px;
+    margin: 30px;
+    display: inline-block;
+}
+
+.card_random_dish a {
+    text-decoration: none;
+    font-family: "textos";
+    color: #000;
+    font-size: 30px;
+}
+
+.card_random_dish:hover {
+    background-color: #8CDED9;
+}
+
+.card_random_dish_img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.card_random_center {
+    padding: 10px;
+    text-align: center;
+}
+
+#random-dish h1 {
+    color: #000;
+    font-family: "titulos";
+    text-align: center;
+}
+
+#random-dish {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/*showDish*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.card {
+    background-color: #D3BC90;
+    border: 3px solid #000;
+    padding: 20px;
+    max-width: 40%;
+
+}
+
+.card img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-family: "titulos";
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #000;
+    font-family: "textos";
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card-body h5 {
+    margin-top: 20px;
+    font-family: "textos";
+    font-size: 18px;
+    color: #000;
+}
+
+.dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu a {
+    padding: 5px 15px;
+    color: #000 !important;
+    font-family: "textos";
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    color: #27d1eb !important;
+}
+
+.dropdown-menu {
+    border: none;
+    width: 200px;
+}
+
+.dropdown-menu.bg-dark {
+    background-color: #D3BC90 !important;
+}
+
+.nav-item.dropdown .nav-link {
+    color: gray !important;
+    font-family: "titulos";
+    font-size: large;
+}
+
+
+#single-dish .card_list_dish img {
+    width: 14%;
+    height: auto;
+    border-radius: 20px !important;
+}
+
+#single-dish .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#single-dish .card_list_dish {
+    margin: 0 auto 10px;
+    width: 200px;
+    text-align: center;
+}
+
+
+#single-dish .card_list_dish img {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px !important;
+}
+
+#single-dish .card_list_dish .card-text {
+    font-size: 20px;
+    color: #000;
+    font-family: "titulos";
+    margin-top: 10px;
+}
+
+#single-dish h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "titulos";
+}
+
+#breadcrumbs {
+    font-family: "titulos";
+    color: #000;
+}
+
+
+@keyframes galopar {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(5px) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(-5px) rotate(5deg);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.header__logo img {
+    animation: galopar 2s ease-in-out infinite;
+}
+
+@keyframes balancear {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.header__cart img {
+    animation: balancear 2s ease-in-out infinite;
+}
+
+#spinner-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.spinner {
+    border: 8px solid #000;
+    border-top: 8px solid #8CDED9;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
